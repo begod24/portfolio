@@ -19,19 +19,15 @@ cd ~/Desktop/projects/portfolio && python3 -m http.server 8000
 
 ## Хостинг (всё бесплатно)
 
-### ★ GitHub Pages — рекомендую
-У тебя уже есть GitHub `begod24`, поэтому адрес будет **https://begod24.github.io**.
-1. Создай на GitHub публичный репозиторий с именем ровно `begod24.github.io`.
-2. Залей туда содержимое этой папки:
-   ```bash
-   cd ~/Desktop/projects/portfolio
-   git init && git add . && git commit -m "Portfolio"
-   git branch -M main
-   git remote add origin git@github.com:begod24/begod24.github.io.git
-   git push -u origin main
-   ```
-3. Repository → Settings → Pages → Source: *Deploy from a branch*, ветка `main`, папка `/ (root)`.
-4. Через 1–2 минуты сайт открыт. Дальше любое изменение = `git commit` + `git push`.
+### GitHub Pages (так сайт и выложен)
+Сайт: **https://begod24.github.io/portfolio/**, репозиторий `begod24/portfolio`, Pages собирается из ветки `main`, папка `/ (root)`.
+Обновить сайт — в этой папке:
+```bash
+git add . && git commit -m "Update" && git push
+```
+Через 1–2 минуты изменения на сайте.
+
+Чтобы адрес был короче (`https://begod24.github.io`): Settings → General → переименуй репозиторий в `begod24.github.io`, потом `git remote set-url origin git@github.com:begod24/begod24.github.io.git`.
 
 ### Альтернативы
 - **Cloudflare Pages** — бесплатно, очень быстрый, можно просто перетащить папку в браузере (Workers & Pages → Create → Upload assets). Адрес вида `имя.pages.dev`.
