@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bekbolat Aldiyarov — Game Developer</title>
+<meta name="description" content="Solo game developer (Neon Yurt). Unity, C#, online co-op, Blender pipelines. Creator of It's our FIELD.">
+<meta property="og:title" content="Bekbolat Aldiyarov — Game Developer">
+<meta property="og:description" content="Solo game developer. Unity, C#, online co-op, Blender pipelines. Creator of It's our FIELD.">
+<meta property="og:image" content="assets/field-key.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%23ffffff'/><path d='M8 50h84M50 8c-22 20-22 64 0 84M50 8c22 20 22 64 0 84' stroke='%23000000' stroke-width='6' fill='none'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="tv" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a class="brand" href="#top">B<span>.</span>A</a>
+  <nav>
+    <a href="#work"><span lang="en">Games</span><span lang="ru">Игры</span></a>
+    <a href="#skills"><span lang="en">Skills</span><span lang="ru">Навыки</span></a>
+    <a href="#about"><span lang="en">About</span><span lang="ru">Обо мне</span></a>
+    <a href="#contact"><span lang="en">Contact</span><span lang="ru">Контакты</span></a>
+    <button class="lang" id="lang" aria-label="Switch language">RU</button>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero wrap">
+  <p class="eyebrow">Bekbolat Aldiyarov · Neon Yurt</p>
+  <h1>
+    <span lang="en">I make games end to end — code, 3D art, tools and trailers.</span>
+    <span lang="ru">Делаю игры целиком — код, 3D-арт, инструменты и трейлеры.</span>
+  </h1>
+  <p class="lead">
+    <span lang="en">Solo game developer working in Unity 6 and Blender. I ship online co-op, build my own art pipelines in Python, and cut my own trailers.</span>
+    <span lang="ru">Соло-разработчик игр на Unity 6 и Blender. Делаю онлайн-кооп, пишу свои арт-пайплайны на Python и сам монтирую трейлеры.</span>
+  </p>
+  <div class="cta">
+    <a class="btn primary" href="https://begod24.itch.io/its-our-field" target="_blank" rel="noopener"><span lang="en">Play It's our FIELD</span><span lang="ru">Играть в It's our FIELD</span> ↗</a>
+    <a class="btn" href="#contact"><span lang="en">Get in touch</span><span lang="ru">Написать мне</span></a>
+  </div>
+  <ul class="stats">
+    <li><b>4</b><span lang="en">games in development</span><span lang="ru">игры в работе</span></li>
+    <li><b>1</b><span lang="en">released on itch.io</span><span lang="ru">релиз на itch.io</span></li>
+    <li><b>4</b><span lang="en">players online co-op</span><span lang="ru">игрока в онлайн-коопе</span></li>
+    <li><b>76k</b><span lang="en">lines of C# in one game</span><span lang="ru">строк C# в одной игре</span></li>
+  </ul>
+</section>
+
+<!-- FEATURED -->
+<section id="work" class="wrap">
+  <h2 class="section-title"><span lang="en">Featured</span><span lang="ru">Главный проект</span></h2>
+
+  <article class="feature">
+    <div class="feature-media">
+      <video src="assets/field-gameplay.mp4" poster="assets/field-yard.jpg" controls muted playsinline preload="none"></video>
+      <div class="thumbs">
+        <div class="px"><img src="assets/field-key.jpg" alt="It's our FIELD key art: four kids and a roly-poly toy in a yard" loading="lazy"></div>
+        <div class="px"><img src="assets/field-bazaar.jpg" alt="Fight at the flea market arena" loading="lazy"></div>
+        <div class="px"><img src="assets/field-finale.jpg" alt="Final level: kids run home at night" loading="lazy"></div>
+        <div class="px"><img src="assets/field-boss.jpg" alt="Transformer boss" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="feature-text">
+      <p class="status live"><span lang="en">Released · v1.0 on itch.io · Steam demo in progress</span><span lang="ru">Вышла · v1.0 на itch.io · готовлю демо для Steam</span></p>
+      <h3>It's our FIELD</h3>
+      <p class="sub"><span lang="en">Backyard dodgeball against toys come to life</span><span lang="ru">Дворовые вышибалы против оживших игрушек</span></p>
+      <p>
+        <span lang="en">An arcade 3D roguelite about 90s backyard dodgeball. Throw and catch balls against waves of toys across 7 arenas picked from a pool of 10, collect cards that combine into combos, and survive the final night boss before mom calls you home. Solo or online co-op for up to 4 players.</span>
+        <span lang="ru">Аркадный 3D roguelite про дворовые вышибалы 90-х. Кидай и лови мячи против волн игрушек на 7 аренах из пула в 10, собирай карточки, которые складываются в комбо, и переживи ночного босса, пока мама не позвала домой. Соло или онлайн-кооп до 4 игроков.</span>
+      </p>
+      <ul class="bullets">
+        <li><span lang="en">Online co-op on Netcode for GameObjects + Relay/Lobby: jitter buffer on sender clock, 19-byte player state at 30 Hz, 60-second rejoin</span><span lang="ru">Онлайн-кооп на Netcode for GameObjects + Relay/Lobby: jitter-буфер по часам отправителя, 19 байт на игрока 30 раз/с, ре-джойн за 60 секунд</span></li>
+        <li><span lang="en">10 bosses with multi-phase fights, wave director with threat peaks, run saves</span><span lang="ru">10 боссов с фазами, директор волн с пиками угрозы, сохранение забега</span></li>
+        <li><span lang="en">All models generated by Python scripts in Blender, one 8×8 palette texture, headless FBX export</span><span lang="ru">Все модели собраны Python-скриптами в Blender: одна палитра 8×8, экспорт FBX без окна</span></li>
+        <li><span lang="en">Custom URP shaders: volumetric fog, outlines, snow trails, cartoon VFX</span><span lang="ru">Свои шейдеры на URP: объёмный туман, контуры, следы на снегу, мультяшный VFX</span></li>
+        <li><span lang="en">Trailer, gameplay cuts and social media content made in-house</span><span lang="ru">Трейлер, геймплейные ролики и посты для соцсетей — сам</span></li>
+      </ul>
+      <p class="tags"><span>Unity 6</span><span>C#</span><span>URP</span><span>NGO + Relay</span><span>Blender Python</span><span>EN / RU</span></p>
+      <div class="links">
+        <a href="https://begod24.itch.io/its-our-field" target="_blank" rel="noopener">itch.io ↗</a>
+        <!-- Add when ready: <a href="https://store.steampowered.com/app/XXXXXXX" target="_blank" rel="noopener">Steam ↗</a> -->
+        <!-- Add when ready: <a href="https://youtube.com/..." target="_blank" rel="noopener">Trailer ↗</a> -->
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- OTHER PROJECTS -->
+<section class="wrap">
+  <h2 class="section-title"><span lang="en">In development</span><span lang="ru">В разработке</span></h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-media px"><img src="assets/pit-storm.jpg" alt="Pit Lane Dreams: race car in the rain with racing HUD" loading="lazy"></div>
+      <div class="card-body">
+        <p class="status"><span lang="en">Prototype</span><span lang="ru">Прототип</span></p>
+        <h3>Pit Lane Dreams</h3>
+        <p>
+          <span lang="en">Co-op formula team racing. One player drives, others play the strategist, the race engineer and the pit crew — every role has its own screen, and bots fill empty seats. Weather, tyre strategy, damage and custom liveries.</span>
+          <span lang="ru">Кооперативные гонки за команду формулы. Один игрок за рулём, остальные — стратег, гоночный инженер и механики на пит-стопе; у каждой роли свой экран, пустые места занимают боты. Погода, стратегия шин, повреждения и свои ливреи.</span>
+        </p>
+        <p class="tags"><span>Unity 6</span><span>Role-based co-op</span><span>Blender Python</span><span>Pixel textures</span></p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-media px contain"><img src="assets/qazaq-food.jpg" alt="Qazaq Slash: 3D Kazakh dishes — kazy, baursak, kurt, samsa, apples" loading="lazy"></div>
+      <div class="card-body">
+        <p class="status"><span lang="en">Prototype · Mobile</span><span lang="ru">Прототип · мобильная</span></p>
+        <h3>Qazaq Slash</h3>
+        <p>
+          <span lang="en">An arcade slicing game about Kazakh cuisine. Swipe to cut kazy, baursak, kurt and Almaty apples, chain combos and avoid hot peppers. Slice a dish ten times to unlock a card with its real story. Kazakh, Russian and English.</span>
+          <span lang="ru">Аркадная «резалка» о казахской кухне. Режь казы, баурсаки, курт и алматинский апорт, собирай комбо и не задень жгучий перец. Разрежь блюдо десять раз — откроется карточка с его настоящей историей. Казахский, русский и английский.</span>
+        </p>
+        <p class="tags"><span>Unity 6</span><span>iOS / Android</span><span>KZ / RU / EN</span></p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-media px"><img src="assets/office.jpg" alt="Office Nightmare: dark office at night" loading="lazy"></div>
+      <div class="card-body">
+        <p class="status"><span lang="en">Prototype · team of 2</span><span lang="ru">Прототип · команда из 2 человек</span></p>
+        <h3>Office Nightmare</h3>
+        <p>
+          <span lang="en">Online co-op horror for 4. Office workers fall asleep before a release and wake up in a building that no longer obeys physics — and every piece of equipment is alive. Restore power, restart the servers and get out before the workday begins.</span>
+          <span lang="ru">Онлайн-кооп хоррор на четверых. Офисные работники засыпают перед релизом и просыпаются в здании, которое больше не подчиняется физике, а вся техника ожила. Почини питание, перезапусти серверы и выберись до начала рабочего дня.</span>
+        </p>
+        <p class="tags"><span>Unity 6</span><span>NGO</span><span>Revive & spectator</span><span>Enemy AI</span></p>
+        <div class="links"><a href="https://github.com/begod24/The-Office" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="wrap">
+  <h2 class="section-title"><span lang="en">What I do</span><span lang="ru">Что я умею</span></h2>
+  <div class="skills">
+    <div>
+      <h4><span lang="en">Gameplay & engine</span><span lang="ru">Геймплей и движок</span></h4>
+      <p>Unity 6 · C# · URP 17 · NavMesh AI · Input System · ScriptableObject data · EditMode tests · <span lang="en">editor tooling and one-click builds</span><span lang="ru">инструменты редактора и сборка в один клик</span></p>
+    </div>
+    <div>
+      <h4><span lang="en">Multiplayer</span><span lang="ru">Мультиплеер</span></h4>
+      <p>Netcode for GameObjects · Relay / Lobby · <span lang="en">interpolation & jitter buffers, compact state packets, rejoin, protocol versioning</span><span lang="ru">интерполяция и jitter-буферы, компактные пакеты, ре-джойн, версии протокола</span></p>
+    </div>
+    <div>
+      <h4><span lang="en">Rendering & VFX</span><span lang="ru">Графика и VFX</span></h4>
+      <p>HLSL · Shader Graph · Render Graph · <span lang="en">volumetric fog, outlines, snow trails</span><span lang="ru">объёмный туман, контуры, следы на снегу</span> · VFX Graph · <span lang="en">particles</span><span lang="ru">частицы</span></p>
+    </div>
+    <div>
+      <h4><span lang="en">3D & pipelines</span><span lang="ru">3D и пайплайны</span></h4>
+      <p>Blender · <span lang="en">procedural models in Python, palette texturing, rigs and animation, automated FBX export</span><span lang="ru">процедурные модели на Python, палитровые текстуры, риги и анимация, автоматический экспорт FBX</span></p>
+    </div>
+    <div>
+      <h4><span lang="en">Design</span><span lang="ru">Геймдизайн</span></h4>
+      <p><span lang="en">Roguelite runs, card combos, boss phases, balance from playtest data, GDDs and design forms</span><span lang="ru">Забеги roguelite, комбо карточек, фазы боссов, баланс по данным плейтестов, диздоки</span></p>
+    </div>
+    <div>
+      <h4><span lang="en">Marketing & audio</span><span lang="ru">Маркетинг и звук</span></h4>
+      <p><span lang="en">Trailers and gameplay cuts (ffmpeg), key art renders, social posts, music and SFX direction, localization</span><span lang="ru">Трейлеры и геймплей-ролики (ffmpeg), ключевой арт, посты в соцсети, музыка и звуки, локализация</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="wrap about">
+  <h2 class="section-title"><span lang="en">About</span><span lang="ru">Обо мне</span></h2>
+  <div class="about-grid">
+    <div>
+      <p>
+        <span lang="en">I'm Bekbolat, a game developer from Kazakhstan, running a one-person studio called <b>Neon Yurt</b>. I like games you play with friends — loud co-op, couch-style chaos, and a bit of horror.</span>
+        <span lang="ru">Меня зовут Бекболат, я разработчик игр из Казахстана и веду студию из одного человека — <b>Neon Yurt</b>. Люблю игры, в которые играют с друзьями: шумный кооп, весёлый хаос и немного хоррора.</span>
+      </p>
+      <p>
+        <span lang="en">I take a game from the first concept to a shipped build: design, code, networking, 3D art, sound, store page and trailer. I automate a lot — my models, icons and builds come from scripts, so a whole art style can be rebuilt in minutes.</span>
+        <span lang="ru">Веду игру от первой идеи до готового билда: дизайн, код, сеть, 3D-арт, звук, страница магазина и трейлер. Многое автоматизирую — модели, иконки и сборки делаются скриптами, поэтому весь арт-стиль можно пересобрать за минуты.</span>
+      </p>
+    </div>
+    <div class="px"><img src="assets/field-menu.jpg" alt="It's our FIELD main menu" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="wrap contact">
+  <h2><span lang="en">Let's talk</span><span lang="ru">Давай пообщаемся</span></h2>
+  <p class="lead"><span lang="en">Open to collaborations, publishing and game dev roles.</span><span lang="ru">Открыт к сотрудничеству, издателям и работе в геймдеве.</span></p>
+  <div class="contact-links">
+    <a class="btn primary" href="mailto:bekbolat.aldiyarov@gmail.com">Email</a>
+    <a class="btn" href="https://begod24.itch.io" target="_blank" rel="noopener">itch.io ↗</a>
+    <a class="btn" href="https://github.com/begod24" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/bekbolat-aldiyarov/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <!-- Optional: Instagram / TikTok / Discord / Steam -->
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap foot">
+  <span>© 2026 Bekbolat Aldiyarov · Neon Yurt</span>
+  <a href="#top">↑</a>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden><img alt=""></div>
+
+<script src="fx.js" defer></script>
+<script>
+  // Language: remember choice, default by browser language
+  const root = document.documentElement, btn = document.getElementById('lang');
+  function setLang(l){ root.dataset.lang = l; root.lang = l; btn.textContent = l === 'en' ? 'RU' : 'EN'; localStorage.setItem('lang', l); }
+  setLang(localStorage.getItem('lang') || ((navigator.language || 'en').startsWith('ru') ? 'ru' : 'en'));
+  btn.onclick = () => setLang(root.dataset.lang === 'en' ? 'ru' : 'en');
+
+  // Click a picture to see it big
+  const lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
+  document.querySelectorAll('.px img').forEach(i => i.onclick = () => { lbImg.src = i.src; lbImg.alt = i.alt; lb.hidden = false; });
+  lb.onclick = () => lb.hidden = true;
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.hidden = true; });
+</script>
+</body>
+</html>
