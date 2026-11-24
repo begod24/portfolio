@@ -122,7 +122,22 @@ h4 { font: 600 14px var(--body); margin: 0 0 8px; color: var(--text); text-trans
 /* ---------- lightbox ---------- */
 .lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.94); display: grid; place-items: center; cursor: zoom-out; padding: 24px; }
 .lightbox[hidden] { display: none; }
-.lightbox img { max-height: 92vh; }
+.lightbox img { max-height: 86vh; max-width: min(1400px, 100% - 120px); cursor: pointer; user-select: none; }
+.lightbox.single img { cursor: zoom-out; }
+.lb-btn { position: absolute; background: #000; color: var(--text); border: 1px solid #444; font: 600 18px var(--body);
+  width: 48px; height: 48px; display: grid; place-items: center; cursor: pointer; transition: background .1s, color .1s; }
+.lb-btn:hover { background: var(--text); color: #000; }
+.lb-prev { left: 20px; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 20px; top: 50%; transform: translateY(-50%); }
+.lb-close { right: 20px; top: 20px; }
+.lightbox.single .lb-prev, .lightbox.single .lb-next { display: none; }
+.lb-count { position: absolute; bottom: 18px; left: 0; right: 0; text-align: center; margin: 0; color: var(--muted); font-size: 13px; letter-spacing: .1em; }
+.more { position: absolute; right: 10px; bottom: 10px; z-index: 2; background: #000; color: var(--text); border: 1px solid #444;
+  font-size: 11px; padding: 2px 7px; pointer-events: none; letter-spacing: .05em; }
+@media (max-width: 860px) {
+  .lightbox img { max-width: 100%; }
+  .lb-prev, .lb-next { top: auto; bottom: 8px; transform: none; width: 44px; height: 44px; }
+}
 
 /* ---------- mobile ---------- */
 @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, 1fr); } }
